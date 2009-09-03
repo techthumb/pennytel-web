@@ -1,2 +1,9 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+$(document).ready(function() {
+    $(document).bind('keydown', 'c', function() {
+        alert('c');
+    });
+
+    $(document).bind('keydown', 's', function() {
+        alert('s');
+    });
+});
