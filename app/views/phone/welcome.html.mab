@@ -1,0 +1,6 @@
+html do
+  body do
+    h1 'Phone#welcome'
+    p 'Find me in app/views/phone/welcome.html.mab'
+  end
+end
