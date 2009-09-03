@@ -7,7 +7,7 @@ html do
     stylesheet_link_tag 'application'
   end
   body do  
-    p 'press "c" to call or "s" to sms'
-    div.main ''
+    p.cue! 'press "c" to call or "s" to sms'
+    div.main! ''
   end
 end
