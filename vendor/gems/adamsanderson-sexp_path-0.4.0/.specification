@@ -1,0 +1,107 @@
+--- !ruby/object:Gem::Specification 
+name: adamsanderson-sexp_path
+version: !ruby/object:Gem::Version 
+  version: 0.4.0
+platform: ruby
+authors: 
+- Adam Sanderson
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-07-20 00:00:00 +10:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: sexp_processor
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ~>
+      - !ruby/object:Gem::Version 
+        version: "3.0"
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: ParseTree
+  type: :development
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ~>
+      - !ruby/object:Gem::Version 
+        version: "2.1"
+    version: 
+description: Allows you to do example based pattern matching and queries against S Expressions (sexp).
+email: netghost@gmail.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- README.rdoc
+files: 
+- README.rdoc
+- Rakefile
+- TODO
+- VERSION.yml
+- examples/print_methods.rb
+- examples/sexp_grep.rb
+- lib/sexp_path.rb
+- lib/sexp_path/line_numbering_processor.rb
+- lib/sexp_path/matcher/all.rb
+- lib/sexp_path/matcher/any.rb
+- lib/sexp_path/matcher/atom.rb
+- lib/sexp_path/matcher/base.rb
+- lib/sexp_path/matcher/block.rb
+- lib/sexp_path/matcher/child.rb
+- lib/sexp_path/matcher/include.rb
+- lib/sexp_path/matcher/not.rb
+- lib/sexp_path/matcher/pattern.rb
+- lib/sexp_path/matcher/sibling.rb
+- lib/sexp_path/matcher/type.rb
+- lib/sexp_path/matcher/wild.rb
+- lib/sexp_path/sexp_collection.rb
+- lib/sexp_path/sexp_query_builder.rb
+- lib/sexp_path/sexp_result.rb
+- lib/sexp_path/traverse.rb
+- test/line_numbering_processor_test.rb
+- test/sample.rb
+- test/sexp_path_capture_test.rb
+- test/sexp_path_matching_test.rb
+- test/sexp_replacement_test.rb
+- test/use_case_test.rb
+has_rdoc: true
+homepage: http://github.com/adamsanderson/sexp_path
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --charset=UTF-8
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.3.4
+signing_key: 
+specification_version: 3
+summary: Pattern matching for S-Expressions (sexp).
+test_files: 
+- test/line_numbering_processor_test.rb
+- test/sexp_path_capture_test.rb
+- test/sexp_path_matching_test.rb
+- test/sexp_replacement_test.rb
+- test/use_case_test.rb

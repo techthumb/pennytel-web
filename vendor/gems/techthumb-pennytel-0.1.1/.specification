@@ -1,0 +1,93 @@
+--- !ruby/object:Gem::Specification 
+name: techthumb-pennytel
+version: !ruby/object:Gem::Version 
+  version: 0.1.1
+platform: ruby
+authors: 
+- Kunal Parikh
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-09-02 00:00:00 +10:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: rspec
+  type: :development
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: "0"
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: yard
+  type: :development
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: "0"
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: soap4r
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 1.5.8
+    version: 
+description: A ruby wrapper for PennyTel WebService API
+email: kunal@techthumb.in
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- LICENSE
+- README.rdoc
+files: 
+- lib/default.rb
+- lib/defaultDriver.rb
+- lib/defaultMappingRegistry.rb
+- lib/pennytel.rb
+- LICENSE
+- README.rdoc
+- spec/pennytel_spec.rb
+- spec/spec_helper.rb
+has_rdoc: false
+homepage: http://github.com/techthumb/pennytel
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --charset=UTF-8
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.3.4
+signing_key: 
+specification_version: 3
+summary: A ruby wrapper for PennyTel WebService API
+test_files: 
+- spec/pennytel_spec.rb
+- spec/spec_helper.rb
