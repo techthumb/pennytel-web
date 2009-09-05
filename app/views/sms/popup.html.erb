@@ -1,0 +1,8 @@
+<% form_remote_tag :url => url_for(:controller => 'sms', :action => 'send_sms'),
+                   :update => 'main' do -%>
+    +<%= text_field_tag 'to', '61 Their Number', :class => 'form_field' %>
+    <br/>
+    <%= text_area_tag 'message', 'You message', :class => 'form_field' %>
+    <br/>
+    <%= submit_tag 'Send' %> or Esc to cancel
+<% end %>

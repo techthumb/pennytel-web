@@ -1,5 +1,7 @@
-<form action='/call/trigger' method='get'>
-  <input type='text' name='from' id='from' value='from' />
-  <br>
-  <input type='text' name='to' id='to' value='to' />
-</form>
+<% form_remote_tag :url => url_for(:controller => 'call', :action => 'trigger'), :update => 'main' do -%>
+    +<%= text_field_tag 'from', '61 Your Number', :class => 'form_field' %>
+    <br/>
+    +<%= text_field_tag 'to', '61 Their Number', :class => 'form_field' %>
+    <br/>
+    <%= submit_tag 'Connect' %> or Esc to cancel
+<% end %>

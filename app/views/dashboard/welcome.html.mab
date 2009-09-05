@@ -2,7 +2,7 @@ html do
   head do
     title 'PennyTel :: Welcome'
     script :src => javascript_path('jquery-1.3.2.min.js'), :type => 'text/javascript' do
-    nil
+      nil
     end
     script :src => javascript_path('jquery-ui.js'), :type => 'text/javascript' do
       nil
@@ -17,7 +17,7 @@ html do
       nil
     end
   end
-  body do  
+  body do
     p.cue! 'press "c" to call or "s" to sms'
     div.main! ''
   end

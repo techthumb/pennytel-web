@@ -38,6 +38,7 @@ module ActionView
       #   tag("img", { :src => "open &amp; shut.png" }, false, false)
       #   # => <img src="open &amp; shut.png" />
       def tag(name, options = nil, open = false, escape = true)
+        puts tag_options(options, escape) if options
         "<#{name}#{tag_options(options, escape) if options}#{open ? ">" : " />"}"
       end
 

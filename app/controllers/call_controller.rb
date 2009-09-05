@@ -1,4 +1,5 @@
 class CallController < ApplicationController
-  def popup
+  def trigger
+    PennyTel.new('kunal@techthumb.in', 'blah blah blah').call(params[:from], params[:to])
   end
 end
