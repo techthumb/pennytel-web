@@ -18,7 +18,7 @@ html do
     end
   end
   body do
-    p.cue! 'press "c" to call or "s" to sms'
+    p.cue! 'press "c" to call, "s" to sms, or "l" to logout' 
     div.main! ''
   end
 end

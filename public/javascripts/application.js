@@ -16,6 +16,16 @@ $(document).ready(function() {
         $('#main').empty();
     });
 
+    $(document).bind('keydown', 'l', function(event) {
+        if (isTextOrTextArea(event.target.type))
+        {
+            return true;
+        }
+        event.stopPropagation();
+        event.preventDefault();
+        document.location.href = '/authentication/logout';        
+    });
+
     $(document).bind('keydown', 's', function(event) {
         if (isTextOrTextArea(event.target.type))
         {
